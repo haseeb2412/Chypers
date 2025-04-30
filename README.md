@@ -17,7 +17,7 @@ All logic is handled via JavaScript functions for quick demonstration.
 ## 🧪 Try It Online
 
 *(Optional section — add a live link if hosted on GitHub Pages, Vercel, etc.)*  
-🔗 [Try Chypers Live](https://your-live-link.com)
+🔗 [Try Chypers Live](https://haseeb2412.github.io/Chypers/)
 
 ---
 
