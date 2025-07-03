@@ -4,25 +4,33 @@ import RailFenceCipher from "./components/RailFenceCipher";
 import PlayfairCipher from "./components/PlayfairCipher";
 import OtpCipher from "./components/OtpCipher";
 import VigenereCipher from "./components/VigenereCipher";
+import HillCipher from "./components/HillCipher";
+import ColumnarCipher from "./components/ColumnarCipher";
+
 import "./App.css";
 const App = () => {
   const [cipher, setCipher] = useState("caesar");
 
   const renderCipherComponent = () => {
     switch (cipher) {
-      case "caesar":
-        return <CaesarCipher />;
-      case "rail":
-        return <RailFenceCipher />;
-      case "playfair":
-        return <PlayfairCipher />;
-      case "otp":
-        return <OtpCipher />;
-      case "vigenere":
-        return <VigenereCipher />;
-      default:
-        return null;
-    }
+  case "caesar":
+    return <CaesarCipher />;
+  case "rail":
+    return <RailFenceCipher />;
+  case "playfair":
+    return <PlayfairCipher />;
+  case "otp":
+    return <OtpCipher />;
+  case "vigenere":
+    return <VigenereCipher />;
+  case "hill":
+    return <HillCipher />;
+  case "columnar":
+    return <ColumnarCipher />;
+  default:
+    return null;
+}
+
   };
 
   return (
@@ -40,6 +48,8 @@ const App = () => {
             <option value="playfair">Playfair Cipher</option>
             <option value="otp">OTP Cipher</option>
             <option value="vigenere">Vigenère Cipher</option>
+            <option value="hill">Hill Cipher</option>
+            <option value="columnar">Columnar Cipher</option>
           </select>
         </div>
         {renderCipherComponent()}
